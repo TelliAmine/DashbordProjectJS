@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>users</title>
+  <title>products</title>
   <!-- loader-->
   <link href="assets/css/pace.min.css" rel="stylesheet"/>
   <script src="assets/js/pace.min.js"></script>
@@ -177,9 +177,68 @@
 	
   <div class="content-wrapper">
     <div class="container-fluid">
-     
+      <form>
+			  <div class="form-group">
+			  <label for="exampleInputName" class="sr-only">Title</label>
+			   <div class="position-relative has-icon-right">
+				  <input type="text" id="title" class="form-control input-shadow" placeholder="title">
+          <small class="invalid-feedback">Le nom est obligatoire</small>
+				  <div class="form-control-position">
+				
+				  </div>
+			   </div>
+			  </div>
+			  <div class="form-group">
+			  <label for="exampleInputEmailId" class="sr-only">Description</label>
+			   <div class="position-relative has-icon-right">
+				  <input type="text" id="description" class="form-control input-shadow" placeholder="Description">
+          <span class="invalid-feedback"
+          >L’adresse e-mail est obligatoire
+        </span>
+        <span class="invalid-feedback"
+          >L’adresse mail doit contient forcément le caractère @
+        </span>
+				  <div class="form-control-position">
+		
+				  </div>
+			   </div>
+			  </div>
+
+			  <div class="form-group">
+			   <label for="exampleInputPassword" class="sr-only">prix</label>
+			   <div class="position-relative has-icon-right">
+				  <input type="number" id="price" class="form-control input-shadow" placeholder="price">
+          <small class="invalid-feedback"
+          >Le mot de passe est obligatoire</small
+        >
+				  <div class="form-control-position">
+			
+				  </div>
+			   </div>
+			  </div>
+        <div class="form-group">
+          <label for="exampleInputPassword" class="sr-only">prix</label>
+          <div class="position-relative has-icon-right">
+           <input type="number" id="quantite" class="form-control input-shadow" placeholder="quantite">
+           <small class="invalid-feedback"
+           >Le mot de passe est obligatoire</small
+         >
+           <div class="form-control-position">
+            
+           </div>
+          </div>
+         </div>
+			  
+			   <div class="form-group">
+			   
+			    </div>
+			  
+			 <button id="submit" type="button" class=" btn-block btn btn-primary waves-light">Create</button>
+	
+			</div>
+			
       <div class="row mt-3">
-        <div class="col-lg-6">
+        <div class="col-lg-12">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Basic Table</h5>
@@ -187,41 +246,26 @@
                <table class="table">
                   <thead>
                     <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
+                      <th scope="col">id</th>
+                      <th scope="col">title</th>
+                      <th scope="col">Description</th>
+                      <th scope="col">prix</th>
+                      <th scope="col">Quantité</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
+                  <tbody id="tbody">
+                    
+                  
                   </tbody>
                 </table>
             </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+  <!--      <div class="col-lg-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Bordered Table</h5>
+               <h5 class="card-title">Bordered Table</h5>
 			  <div class="table-responsive">
               <table class="table table-bordered">
                 <thead>
@@ -252,93 +296,15 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
-            </div>
+            </div>-->
+       
           </div>
         </div>
+      </div>
       </div><!--End Row-->
 
-
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Striped Table</h5>
-			  <div class="table-responsive">
-               <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                    </tr>
-                  </tbody>
-                </table>
-            </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Hover Table</h5>
-			  <div class="table-responsive">
-              <table class="table table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div><!--End Row-->
-
+<!--End Row-->
+<!--
       <div class="row">
         <div class="col-lg-6">
           <div class="card">
@@ -441,7 +407,8 @@
             </div>
           </div>
         </div>
-      </div><!--End Row-->
+      </div>
+      --><!--End Row-->
 	  
 	  <!--start overlay-->
 		  <div class="overlay toggle-menu"></div>
@@ -518,6 +485,7 @@
   
   <!-- Custom scripts -->
   <script src="assets/js/app-script.js"></script>
+  <script src="./js/products.js"></script>
 	
 </body>
 </html>
